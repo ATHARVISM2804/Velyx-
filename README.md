@@ -1,4 +1,12 @@
-![Velyx Banner](assets/banner.png)
+<!-- Velyx Banner -->
+<p align="center">
+  <img src="https://res.cloudinary.com/dmhabztbf/image/upload/v1774178896/1_mmsvlj.png" width="16.5%" style="display:inline-block; margin:0 2px;" alt="Banner 1"/>
+  <img src="https://res.cloudinary.com/dmhabztbf/image/upload/v1774178829/2_aljbaz.png" width="16.5%" style="display:inline-block; margin:0 2px;" alt="Banner 2"/>
+  <img src="https://res.cloudinary.com/dmhabztbf/image/upload/v1774178883/4_fyzsh2.png" width="16.5%" style="display:inline-block; margin:0 2px;" alt="Banner 3"/>
+  <img src="https://res.cloudinary.com/dmhabztbf/image/upload/v1774178900/3_mn13lq.png" width="16.5%" style="display:inline-block; margin:0 2px;" alt="Banner 4"/>
+  <img src="https://res.cloudinary.com/dmhabztbf/image/upload/v1774178812/5_llt44q.png" width="16.5%" style="display:inline-block; margin:0 2px;" alt="Banner 5"/>
+  <img src="https://res.cloudinary.com/dmhabztbf/image/upload/v1774179085/6_tefrgr.png" width="16.5%" style="display:inline-block; margin:0 2px;" alt="Banner 6"/>
+</p>
 
 <div align="center">
 
