@@ -12,9 +12,7 @@
 [![Discord](https://img.shields.io/badge/Discord-Join%20Chat-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/hQZntfGsbJ)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?logo=x&logoColor=white)](https://x.com/velyx_ai)
 
-<a href="https://trendshift.io/repositories/17374" target="_blank"><img src="https://trendshift.io/api/badge/repositories/17374" alt="velyx-AI%2Fvelyx | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-**[English](readme/README_en.md) | [中文](readme/README_zh.md) | [日本語](readme/README_ja.md) | [한국어](readme/README_ko.md) | [Español](readme/README_es.md) | [Français](readme/README_fr.md)**
+**[English](readme/README_en.md)**
 
 </div>
 
@@ -44,14 +42,15 @@ Try now: [velyx.bot](https://velyx.bot) · Source: [velyxBot on GitHub](https://
 
 Velyx treats **memory like a file system**—structured, hierarchical, and instantly accessible.
 
-| File System | Velyx Memory |
-|-------------|-------------|
-| 📁 Folders | 🏷️ Categories (auto-organized topics) |
-| 📄 Files | 🧠 Memory Items (extracted facts, preferences, skills) |
-| 🔗 Symlinks | 🔄 Cross-references (related memories linked) |
-| 📂 Mount points | 📥 Resources (conversations, documents, images) |
+| File System     | Velyx Memory                                           |
+| --------------- | ------------------------------------------------------ |
+| 📁 Folders      | 🏷️ Categories (auto-organized topics)                  |
+| 📄 Files        | 🧠 Memory Items (extracted facts, preferences, skills) |
+| 🔗 Symlinks     | 🔄 Cross-references (related memories linked)          |
+| 📂 Mount points | 📥 Resources (conversations, documents, images)        |
 
 **Why this matters:**
+
 - **Navigate memories** like browsing directories—drill down from broad categories to specific facts
 - **Mount new knowledge** instantly—conversations and documents become queryable memory
 - **Cross-link everything**—memories reference each other, building a connected knowledge graph
@@ -84,14 +83,14 @@ If you find Velyx useful or interesting, a GitHub Star ⭐️ would be greatly a
 
 ---
 
-
 ## ✨ Core Features
 
-| Capability | Description |
-|------------|-------------|
-| 🤖 **24/7 Proactive Agent** | Always-on memory agent that works continuously in the background—never sleeps, never forgets |
+| Capability                    | Description                                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------------------- |
+| 🤖 **24/7 Proactive Agent**   | Always-on memory agent that works continuously in the background—never sleeps, never forgets |
 | 🎯 **User Intention Capture** | Understands and remembers user goals, preferences, and context across sessions automatically |
-| 💰 **Cost Efficient** | Reduces long-running token costs by caching insights and avoiding redundant LLM calls |
+| 💰 **Cost Efficient**         | Reduces long-running token costs by caching insights and avoiding redundant LLM calls        |
+
 ---
 
 ## 🔄 How Proactive Memory Works
@@ -106,6 +105,7 @@ python proactive.py
 ---
 
 ### Proactive Memory Lifecycle
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                         USER QUERY                                               │
@@ -161,7 +161,9 @@ python proactive.py
 ## 🎯 Proactive Use Cases
 
 ### 1. **Information Recommendation**
-*Agent monitors interests and proactively surfaces relevant content*
+
+_Agent monitors interests and proactively surfaces relevant content_
+
 ```python
 # User has been researching AI topics
 Velyx tracks: reading history, saved articles, search queries
@@ -179,7 +181,9 @@ Agent: "I found 3 new papers on RAG optimization that align with
 ```
 
 ### 2. **Email Management**
-*Agent learns communication patterns and handles routine correspondence*
+
+_Agent learns communication patterns and handles routine correspondence_
+
 ```python
 # Velyx observes email patterns over time:
 - Response templates for common scenarios
@@ -201,7 +205,9 @@ Agent: "You have 12 new emails. I've drafted responses for 3 routine
 ```
 
 ### 3. **Trading & Financial Monitoring**
-*Agent tracks market context and user investment behavior*
+
+_Agent tracks market context and user investment behavior_
+
 ```python
 # Velyx learns trading preferences:
 - Risk tolerance from historical decisions
@@ -222,7 +228,6 @@ Agent: "NVDA dropped 5% in after-hours trading. Based on your past
 - Anticipate tax-loss harvesting opportunities
 ```
 
-
 ...
 
 ---
@@ -233,13 +238,14 @@ Velyx's three-layer system enables both **reactive queries** and **proactive con
 
 <img width="100%" alt="structure" src="assets/structure.png" />
 
-| Layer | Reactive Use | Proactive Use |
-|-------|--------------|---------------|
-| **Resource** | Direct access to original data | Background monitoring for new patterns |
-| **Item** | Targeted fact retrieval | Real-time extraction from ongoing interactions |
-| **Category** | Summary-level overview | Automatic context assembly for anticipation |
+| Layer        | Reactive Use                   | Proactive Use                                  |
+| ------------ | ------------------------------ | ---------------------------------------------- |
+| **Resource** | Direct access to original data | Background monitoring for new patterns         |
+| **Item**     | Targeted fact retrieval        | Real-time extraction from ongoing interactions |
+| **Category** | Summary-level overview         | Automatic context assembly for anticipation    |
 
 **Proactive Benefits:**
+
 - **Auto-categorization**: New memories self-organize into topics
 - **Pattern Detection**: System identifies recurring themes
 - **Context Prediction**: Anticipates what information will be needed next
@@ -258,16 +264,16 @@ For enterprise deployment with custom proactive workflows, contact **info@velyx.
 
 #### Cloud API (v3)
 
-| Base URL | `https://api.velyx.so` |
-|----------|----------------------|
-| Auth | `Authorization: Bearer YOUR_API_KEY` |
+| Base URL | `https://api.velyx.so`               |
+| -------- | ------------------------------------ |
+| Auth     | `Authorization: Bearer YOUR_API_KEY` |
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/v3/memory/memorize` | Register continuous learning task |
-| `GET` | `/api/v3/memory/memorize/status/{task_id}` | Check real-time processing status |
-| `POST` | `/api/v3/memory/categories` | List auto-generated categories |
-| `POST` | `/api/v3/memory/retrieve` | Query memory (supports proactive context loading) |
+| Method | Endpoint                                   | Description                                       |
+| ------ | ------------------------------------------ | ------------------------------------------------- |
+| `POST` | `/api/v3/memory/memorize`                  | Register continuous learning task                 |
+| `GET`  | `/api/v3/memory/memorize/status/{task_id}` | Check real-time processing status                 |
+| `POST` | `/api/v3/memory/categories`                | List auto-generated categories                    |
+| `POST` | `/api/v3/memory/retrieve`                  | Query memory (supports proactive context loading) |
 
 📚 **[Full API Documentation](https://velyx.pro/docs#cloud-version)**
 
@@ -276,6 +282,7 @@ For enterprise deployment with custom proactive workflows, contact **info@velyx.
 ### Option 2: Self-Hosted
 
 #### Installation
+
 ```bash
 pip install -e .
 ```
@@ -285,6 +292,7 @@ pip install -e .
 > **Requirements**: Python 3.13+ and an OpenAI API key
 
 **Test Continuous Learning** (in-memory):
+
 ```bash
 export OPENAI_API_KEY=your_api_key
 cd tests
@@ -292,6 +300,7 @@ python test_inmemory.py
 ```
 
 **Test with Persistent Storage** (PostgreSQL):
+
 ```bash
 # Start PostgreSQL with pgvector
 docker run -d \
@@ -309,6 +318,7 @@ python test_postgres.py
 ```
 
 Both examples demonstrate **proactive memory workflows**:
+
 1. **Continuous Ingestion**: Process multiple files sequentially
 2. **Auto-Extraction**: Immediate memory creation
 3. **Proactive Retrieval**: Context-aware memory surfacing
@@ -320,6 +330,7 @@ See [`tests/test_inmemory.py`](tests/test_inmemory.py) and [`tests/test_postgres
 ### Custom LLM and Embedding Providers
 
 Velyx supports custom LLM and embedding providers beyond OpenAI. Configure them via `llm_profiles`:
+
 ```python
 from velyx import velyxService
 
@@ -350,6 +361,7 @@ service = velyxService(
 Velyx supports [OpenRouter](https://openrouter.ai) as a model provider, giving you access to multiple LLM providers through a single API.
 
 #### Configuration
+
 ```python
 from velyx import MemoryService
 
@@ -372,19 +384,20 @@ service = MemoryService(
 
 #### Environment Variables
 
-| Variable | Description |
-|----------|-------------|
+| Variable             | Description                                                                   |
+| -------------------- | ----------------------------------------------------------------------------- |
 | `OPENROUTER_API_KEY` | Your OpenRouter API key from [openrouter.ai/keys](https://openrouter.ai/keys) |
 
 #### Supported Features
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| Chat Completions | Supported | Works with any OpenRouter chat model |
-| Embeddings | Supported | Use OpenAI embedding models via OpenRouter |
-| Vision | Supported | Use vision-capable models (e.g., `openai/gpt-4o`) |
+| Feature          | Status    | Notes                                             |
+| ---------------- | --------- | ------------------------------------------------- |
+| Chat Completions | Supported | Works with any OpenRouter chat model              |
+| Embeddings       | Supported | Use OpenAI embedding models via OpenRouter        |
+| Vision           | Supported | Use vision-capable models (e.g., `openai/gpt-4o`) |
 
 #### Running OpenRouter Tests
+
 ```bash
 export OPENROUTER_API_KEY=your_api_key
 
@@ -426,6 +439,7 @@ result = await service.memorize(
 ```
 
 **Proactive Features:**
+
 - Zero-delay processing—memories available immediately
 - Automatic categorization without manual tagging
 - Cross-reference with existing memories for pattern detection
@@ -454,14 +468,15 @@ Deep **anticipatory reasoning** for complex contexts:
 
 #### Comparison
 
-| Aspect | RAG (Fast Context) | LLM (Deep Reasoning) |
-|--------|-------------------|---------------------|
-| **Speed** | ⚡ Milliseconds | 🐢 Seconds |
-| **Cost** | 💰 Embedding only | 💰💰 LLM inference |
+| Aspect            | RAG (Fast Context)    | LLM (Deep Reasoning)      |
+| ----------------- | --------------------- | ------------------------- |
+| **Speed**         | ⚡ Milliseconds       | 🐢 Seconds                |
+| **Cost**          | 💰 Embedding only     | 💰💰 LLM inference        |
 | **Proactive use** | Continuous monitoring | Triggered context loading |
-| **Best for** | Real-time suggestions | Complex anticipation |
+| **Best for**      | Real-time suggestions | Complex anticipation      |
 
 #### Usage
+
 ```python
 # Proactive retrieval with context history
 result = await service.retrieve(
@@ -483,6 +498,7 @@ result = await service.retrieve(
 ```
 
 **Proactive Filtering**: Use `where` to scope continuous monitoring:
+
 - `where={"user_id": "123"}` - User-specific context
 - `where={"agent_id__in": ["1", "2"]}` - Multi-agent coordination
 - Omit `where` for global context awareness
@@ -494,12 +510,14 @@ result = await service.retrieve(
 ### Example 1: Always-Learning Assistant
 
 Continuously learns from every interaction without explicit memory commands:
+
 ```bash
 export OPENAI_API_KEY=your_api_key
 python examples/example_1_conversation_memory.py
 ```
 
 **Proactive Behavior:**
+
 - Automatically extracts preferences from casual mentions
 - Builds relationship models from interaction patterns
 - Surfaces relevant context in future conversations
@@ -512,12 +530,14 @@ python examples/example_1_conversation_memory.py
 ### Example 2: Self-Improving Agent
 
 Learns from execution logs and proactively suggests optimizations:
+
 ```bash
 export OPENAI_API_KEY=your_api_key
 python examples/example_2_skill_extraction.py
 ```
 
 **Proactive Behavior:**
+
 - Monitors agent actions and outcomes continuously
 - Identifies patterns in successes and failures
 - Auto-generates skill guides from experience
@@ -530,12 +550,14 @@ python examples/example_2_skill_extraction.py
 ### Example 3: Multimodal Context Builder
 
 Unifies memory across different input types for comprehensive context:
+
 ```bash
 export OPENAI_API_KEY=your_api_key
 python examples/example_3_multimodal_memory.py
 ```
 
 **Proactive Behavior:**
+
 - Cross-references text, images, and documents automatically
 - Builds unified understanding across modalities
 - Surfaces visual context when discussing related topics
@@ -557,34 +579,17 @@ View detailed experimental data: [Velyx-experiment](https://github.com/velyx-AI/
 
 ## 🧩 Ecosystem
 
-| Repository | Description | Proactive Features |
-|------------|-------------|-------------------|
-| **[Velyx](https://github.com/velyx-AI/Velyx)** | Core proactive memory engine | 7×24 learning pipeline, auto-categorization |
-| **[Velyx-server](https://github.com/velyx-AI/Velyx-server)** | Backend with continuous sync | Real-time memory updates, webhook triggers |
-| **[Velyx-ui](https://github.com/velyx-AI/Velyx-ui)** | Visual memory dashboard | Live memory evolution monitoring |
+| Repository                                                   | Description                  | Proactive Features                          |
+| ------------------------------------------------------------ | ---------------------------- | ------------------------------------------- |
+| **[Velyx](https://github.com/velyx-AI/Velyx)**               | Core proactive memory engine | 7×24 learning pipeline, auto-categorization |
+| **[Velyx-server](https://github.com/velyx-AI/Velyx-server)** | Backend with continuous sync | Real-time memory updates, webhook triggers  |
+| **[Velyx-ui](https://github.com/velyx-AI/Velyx-ui)**         | Visual memory dashboard      | Live memory evolution monitoring            |
 
 **Quick Links:**
+
 - 🚀 [Try Velyx Cloud](https://app.velyx.so/quick-start)
 - 📚 [API Documentation](https://velyx.pro/docs)
 - 💬 [Discord Community](https://discord.com/invite/hQZntfGsbJ)
-
----
-
-## 🤝 Partners
-
-<div align="center">
-
-<a href="https://github.com/TEN-framework/ten-framework"><img src="https://avatars.githubusercontent.com/u/113095513?s=200&v=4" alt="Ten" height="40" style="margin: 10px;"></a>
-<a href="https://openagents.org"><img src="assets/partners/openagents.png" alt="OpenAgents" height="40" style="margin: 10px;"></a>
-<a href="https://github.com/milvus-io/milvus"><img src="https://miro.medium.com/v2/resize:fit:2400/1*-VEGyAgcIBD62XtZWavy8w.png" alt="Milvus" height="40" style="margin: 10px;"></a>
-<a href="https://xroute.ai/"><img src="assets/partners/xroute.png" alt="xRoute" height="40" style="margin: 10px;"></a>
-<a href="https://jaaz.app/"><img src="assets/partners/jazz.png" alt="Jazz" height="40" style="margin: 10px;"></a>
-<a href="https://github.com/Buddie-AI/Buddie"><img src="assets/partners/buddie.png" alt="Buddie" height="40" style="margin: 10px;"></a>
-<a href="https://github.com/bytebase/bytebase"><img src="assets/partners/bytebase.png" alt="Bytebase" height="40" style="margin: 10px;"></a>
-<a href="https://github.com/LazyAGI/LazyLLM"><img src="assets/partners/LazyLLM.png" alt="LazyLLM" height="40" style="margin: 10px;"></a>
-<a href="https://clawdchat.ai/"><img src="assets/partners/Clawdchat.png" alt="Clawdchat" height="40" style="margin: 10px;"></a>
-
-</div>
 
 ---
 
@@ -597,11 +602,13 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 To start contributing to Velyx, you'll need to set up your development environment:
 
 #### Prerequisites
+
 - Python 3.13+
 - [uv](https://github.com/astral-sh/uv) (Python package manager)
 - Git
 
 #### Setup Development Environment
+
 ```bash
 # 1. Fork and clone the repository
 git clone https://github.com/YOUR_USERNAME/Velyx.git
@@ -612,6 +619,7 @@ make install
 ```
 
 The `make install` command will:
+
 - Create a virtual environment using `uv`
 - Install all project dependencies
 - Set up pre-commit hooks for code quality checks
@@ -619,11 +627,13 @@ The `make install` command will:
 #### Running Quality Checks
 
 Before submitting your contribution, ensure your code passes all quality checks:
+
 ```bash
 make check
 ```
 
 The `make check` command runs:
+
 - **Lock file verification**: Ensures `pyproject.toml` consistency
 - **Pre-commit hooks**: Lints code with Ruff, formats with Black
 - **Type checking**: Runs `mypy` for static type analysis
@@ -634,6 +644,7 @@ The `make check` command runs:
 For detailed contribution guidelines, code standards, and development practices, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 **Quick tips:**
+
 - Create a new branch for each feature or bug fix
 - Write clear commit messages
 - Add tests for new functionality
