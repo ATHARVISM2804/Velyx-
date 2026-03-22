@@ -13,7 +13,7 @@ from velyx.embedding.backends.openai import OpenAIEmbeddingBackend
 
 
 def _load_proxy() -> str | None:
-    return os.getenv("velyx_HTTP_PROXY") or os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY") or None
+    return os.getenv("VELYX_HTTP_PROXY") or os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY") or None
 
 
 logger = logging.getLogger(__name__)

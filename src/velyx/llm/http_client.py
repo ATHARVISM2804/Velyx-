@@ -17,7 +17,7 @@ from velyx.llm.backends.openrouter import OpenRouterLLMBackend
 
 
 def _load_proxy() -> str | None:
-    return os.getenv("velyx_HTTP_PROXY") or os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY") or None
+    return os.getenv("VELYX_HTTP_PROXY") or os.getenv("HTTP_PROXY") or os.getenv("HTTPS_PROXY") or None
 
 
 # Minimal embedding backend support (moved from embedding module)
