@@ -16,7 +16,7 @@
 
 ---
 
-![Velyx Overview](https://res.cloudinary.com/dmhabztbf/image/upload/v1774178896/1_mmsvlj.png)
+![Velyx Overview](assets/1.png)
 
 Velyx is a memory framework built for **24/7 proactive agents**.
 It is designed for long-running use and greatly **reduces the LLM token cost** of keeping agents always online, making always-on, evolving agents practical in production systems.
@@ -26,7 +26,7 @@ Velyx **continuously captures and understands user intent**. Even without a comm
 
 ## 🤖 [OpenClaw (Moltbot, Clawdbot) Alternative](https://github.com/velyx-AI/velyxBot)
 
-![Velyx Bot](https://res.cloudinary.com/dmhabztbf/image/upload/v1774178829/2_aljbaz.png)
+![Velyx Bot](assets/2.png)
 
 **[Velyx Bot](https://github.com/velyx-AI/velyxBot)** — Now open source. The enterprise-ready OpenClaw. Your proactive AI assistant that remembers everything.
 
@@ -235,7 +235,7 @@ Agent: "NVDA dropped 5% in after-hours trading. Based on your past
 
 Velyx's three-layer system enables both **reactive queries** and **proactive context loading**:
 
-![Velyx Memory Architecture](https://res.cloudinary.com/dmhabztbf/image/upload/v1774178883/4_fyzsh2.png)
+![Velyx Memory Architecture](assets/4.png)
 
 | Layer        | Reactive Use                   | Proactive Use                                  |
 | ------------ | ------------------------------ | ---------------------------------------------- |
@@ -420,7 +420,7 @@ See [`examples/example_4_openrouter_memory.py`](examples/example_4_openrouter_me
 
 Processes inputs in real-time and immediately updates memory:
 
-![Velyx Memorize Pipeline](https://res.cloudinary.com/dmhabztbf/image/upload/v1774178900/3_mn13lq.png)
+![Velyx Memorize Pipeline](assets/3.png)
 
 ```python
 result = await service.memorize(
@@ -447,7 +447,7 @@ result = await service.memorize(
 
 Velyx supports both **proactive context loading** and **reactive querying**:
 
-![Velyx Retrieve Intelligence](https://res.cloudinary.com/dmhabztbf/image/upload/v1774178812/5_llt44q.png)
+![Velyx Retrieve Intelligence](assets/5.png)
 
 #### RAG-based Retrieval (`method="rag"`)
 
@@ -570,7 +570,7 @@ python examples/example_3_multimodal_memory.py
 
 Velyx achieves **92.09% average accuracy** on the Locomo benchmark across all reasoning tasks, demonstrating reliable proactive memory operations.
 
-![Velyx Benchmark Results](https://res.cloudinary.com/dmhabztbf/image/upload/v1774179085/6_tefrgr.png)
+![Velyx Benchmark Results](assets/6.png)
 
 View detailed experimental data: [Velyx-experiment](https://github.com/velyx-AI/Velyx-experiment)
 
