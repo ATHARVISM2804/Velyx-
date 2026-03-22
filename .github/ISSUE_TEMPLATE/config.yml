@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/velyx-AI/velyx/discussions
+    about: For questions and general discussions about velyx
+  - name: Documentation
+    url: https://github.com/velyx-AI/velyx/blob/main/README.md
+    about: Check out the velyx documentation
